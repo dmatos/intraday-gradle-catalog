@@ -1,0 +1,51 @@
+[versions]
+spring-boot = "3.2.2"
+spring-dependency-management = "1.1.4"
+spring-boot-dependencies = "3.2.2"
+springcloud = "2023.0.0"
+junit = "5.10.1"
+gson = "2.9.0"
+lombok = "1.18.30"
+springdoc = "2.3.0"
+sonarqube = "4.4.1.3373"
+openfeign = "4.1.0"
+liquibase= "4.25.1"
+mysql = "8.0.33"
+graalvm-js = "23.0.3"
+graalvm-js-scriptengine = "23.1.2"
+jsoup = "1.15.2"
+
+[libraries]
+spring-boot-starter-actuator = {group = "org.springframework.boot", name="spring-boot-starter-actuator", version.ref="spring-boot"}
+spring-boot-dependencies = {group = "org.springframework.boot", name="spring-boot-dependencies", version.ref="spring-boot"}
+spring-boot-starter-test = {group = "org.springframework.boot", name="spring-boot-starter-test", version.ref="spring-boot"}
+spring-security-test = {group = "org.springframework.security", name = "spring-security-test",  version.ref="spring-boot"}
+spring-boot-starter-security = {group = "org.springframework.boot", name = "spring-boot-starter-security",  version.ref="spring-boot"}
+spring-boot-starter-data-jpa = {group = "org.springframework.boot", name="spring-boot-starter-data-jpa", version.ref="spring-boot"}
+spring-boot-configuration-processor = {group = "org.springframework.boot", name = "spring-boot-configuration-processor", version.ref="spring-boot"}
+spring-boot-devtools = {group = "org.springframework.boot", name = "spring-boot-devtools", version.ref="spring-boot"}
+spring-boot-starter-web = {group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref="spring-boot"}
+openfeign = {group = "org.springframework.cloud", name = "spring-cloud-starter-openfeign", version.ref="openfeign"}
+junit-jupiter = {group = "org.junit.jupiter", name="junit-jupiter", version.ref="junit"}
+goole-gson = {group = "com.google.code.gson", name="gson", version.ref="gson"}
+lombok = {group = "org.projectlombok", name="lombok", version.ref="lombok"}
+springdoc = {group = "org.springdoc", name="springdoc-openapi-starter-webmvc-ui", version.ref="springdoc"}
+liquibase = {group = "org.liquibase", name = "liquibase-core", version.ref="liquibase"}
+mysql = {group = "mysql", name = "mysql-connector-java", version.ref="mysql"}
+feign-jackson = {group = "io.github.openfeign", name = "feign-jackson", version="13.1"}
+graalvm-js = {group = "org.graalvm.js", name = "js", version.ref="graalvm-js"}
+graalvm-js-script-engine = {group = "org.graalvm.js", name = "js-scriptengine", version.ref = "graalvm-js-scriptengine"}
+jsoup = {group = "org.jsoup", name = "jsoup", version.ref = "jsoup"}
+
+[plugins]
+springboot = {id = "org.springframework.boot", version.ref = "spring-boot"}
+spring-dependency-management = {id = "io.spring.dependency-management", version.ref="spring-dependency-management"}
+sonarqube = {id = "org.sonarqube", version.ref="sonarqube"}
+
+[bundles]
+spring-boot-web = ["spring-boot-dependencies","spring-boot-starter-actuator", "spring-boot-starter-data-jpa","spring-boot-configuration-processor","spring-boot-starter-web", "springdoc", "junit-jupiter", "lombok"]
+spring-boot-security = ["spring-security-test", "spring-boot-starter-security"]
+spring-boot-data = ["liquibase", "mysql"]
+openfeign = ["openfeign","feign-jackson"]
+graalvm-js = ["graalvm-js", "graalvm-js-script-engine"]
+
