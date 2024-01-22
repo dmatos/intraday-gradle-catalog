@@ -1,6 +1,3 @@
-# local files
-gradle.properties
-
 # Compiled class file
 *.class
 

@@ -13,7 +13,10 @@ liquibase= "4.25.1"
 mysql = "8.0.33"
 graalvm-js = "23.0.3"
 graalvm-js-scriptengine = "23.1.2"
-jsoup = "1.15.2"
+jsoup = "1.15.3"
+commons-io = "2.11.0"
+modelmapper = "3.1.0"
+jackson-databind = "2.16.1"
 
 [libraries]
 spring-boot-starter-actuator = {group = "org.springframework.boot", name="spring-boot-starter-actuator", version.ref="spring-boot"}
@@ -22,6 +25,7 @@ spring-boot-starter-test = {group = "org.springframework.boot", name="spring-boo
 spring-security-test = {group = "org.springframework.security", name = "spring-security-test",  version.ref="spring-boot"}
 spring-boot-starter-security = {group = "org.springframework.boot", name = "spring-boot-starter-security",  version.ref="spring-boot"}
 spring-boot-starter-data-jpa = {group = "org.springframework.boot", name="spring-boot-starter-data-jpa", version.ref="spring-boot"}
+spring-boot-starter-artemis = {group = "org.springframework.boot", name = "spring-boot-starter-artemis", version.ref="spring-boot"}
 spring-boot-configuration-processor = {group = "org.springframework.boot", name = "spring-boot-configuration-processor", version.ref="spring-boot"}
 spring-boot-devtools = {group = "org.springframework.boot", name = "spring-boot-devtools", version.ref="spring-boot"}
 spring-boot-starter-web = {group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref="spring-boot"}
@@ -36,6 +40,10 @@ feign-jackson = {group = "io.github.openfeign", name = "feign-jackson", version=
 graalvm-js = {group = "org.graalvm.js", name = "js", version.ref="graalvm-js"}
 graalvm-js-script-engine = {group = "org.graalvm.js", name = "js-scriptengine", version.ref = "graalvm-js-scriptengine"}
 jsoup = {group = "org.jsoup", name = "jsoup", version.ref = "jsoup"}
+commons-io = {group = "commons-io", name = "commons-io", version.ref="commons-io"}
+jackson-databind = {group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref="jackson-databind"}
+jackson-datatype-jsr310 = {group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jsr310", version.ref="jackson-databind"}
+modelmapper = {group = "org.modelmapper", name = "modelmapper", version.ref="modelmapper"}
 
 [plugins]
 springboot = {id = "org.springframework.boot", version.ref = "spring-boot"}
@@ -43,7 +51,7 @@ spring-dependency-management = {id = "io.spring.dependency-management", version.
 sonarqube = {id = "org.sonarqube", version.ref="sonarqube"}
 
 [bundles]
-spring-boot-web = ["spring-boot-dependencies","spring-boot-starter-actuator", "spring-boot-starter-data-jpa","spring-boot-configuration-processor","spring-boot-starter-web", "springdoc", "junit-jupiter", "lombok"]
+spring-boot-web = ["spring-boot-dependencies","spring-boot-starter-actuator", "spring-boot-starter-data-jpa","spring-boot-configuration-processor","spring-boot-starter-web", "springdoc", "junit-jupiter", "lombok", "spring-boot-starter-test"]
 spring-boot-security = ["spring-security-test", "spring-boot-starter-security"]
 spring-boot-data = ["liquibase", "mysql"]
 openfeign = ["openfeign","feign-jackson"]
