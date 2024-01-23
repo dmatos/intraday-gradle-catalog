@@ -18,6 +18,8 @@ commons-io = "2.11.0"
 modelmapper = "3.1.0"
 jackson-databind = "2.16.1"
 docker-java-application = "9.3.6"
+jasypt-spring-boot = "3.0.5"
+spring-dotenv = "4.0.0"
 
 [libraries]
 spring-boot-starter-actuator = {group = "org.springframework.boot", name="spring-boot-starter-actuator", version.ref="spring-boot"}
@@ -45,6 +47,8 @@ commons-io = {group = "commons-io", name = "commons-io", version.ref="commons-io
 jackson-databind = {group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref="jackson-databind"}
 jackson-datatype-jsr310 = {group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jsr310", version.ref="jackson-databind"}
 modelmapper = {group = "org.modelmapper", name = "modelmapper", version.ref="modelmapper"}
+jasypt-spring-boot = {group = "com.github.ulisesbocchio", name = "jasypt-spring-boot", version.ref="jasypt-spring-boot"}
+spring-dotenv = {group = "me.paulschwarz", name = "spring-dotenv", version.ref = "spring-dotenv"}
 
 [plugins]
 springboot = {id = "org.springframework.boot", version.ref = "spring-boot"}
@@ -55,7 +59,7 @@ docker-java-application = {id = "com.bmuschko.docker-java-application", version.
 [bundles]
 spring-boot-web = ["spring-boot-dependencies","spring-boot-starter-actuator", "spring-boot-starter-data-jpa","spring-boot-configuration-processor","spring-boot-starter-web", "springdoc", "junit-jupiter", "lombok", "spring-boot-starter-test"]
 spring-boot-security = ["spring-security-test", "spring-boot-starter-security"]
-spring-boot-data = ["liquibase", "mysql"]
+spring-boot-data = ["liquibase", "mysql", "jasypt-spring-boot", "spring-dotenv"]
 openfeign = ["openfeign","feign-jackson"]
 graalvm-js = ["graalvm-js", "graalvm-js-script-engine"]
 
