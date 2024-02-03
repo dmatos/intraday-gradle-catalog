@@ -10,7 +10,7 @@ springdoc = "2.3.0"
 sonarqube = "4.4.1.3373"
 openfeign = "4.1.0"
 liquibase= "4.25.1"
-mysql = "8.0.33"
+mysql = "8.3.0"
 graalvm-js = "23.0.3"
 graalvm-js-scriptengine = "23.1.2"
 jsoup = "1.15.3"
@@ -38,7 +38,7 @@ goole-gson = {group = "com.google.code.gson", name="gson", version.ref="gson"}
 lombok = {group = "org.projectlombok", name="lombok", version.ref="lombok"}
 springdoc = {group = "org.springdoc", name="springdoc-openapi-starter-webmvc-ui", version.ref="springdoc"}
 liquibase = {group = "org.liquibase", name = "liquibase-core", version.ref="liquibase"}
-mysql = {group = "mysql", name = "mysql-connector-java", version.ref="mysql"}
+mysql = {group = "com.mysql", name = "mysql-connector-j", version.ref="mysql"}
 feign-jackson = {group = "io.github.openfeign", name = "feign-jackson", version="13.1"}
 graalvm-js = {group = "org.graalvm.js", name = "js", version.ref="graalvm-js"}
 graalvm-js-script-engine = {group = "org.graalvm.js", name = "js-scriptengine", version.ref = "graalvm-js-scriptengine"}
