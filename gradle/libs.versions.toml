@@ -20,6 +20,8 @@ jackson-databind = "2.16.1"
 docker-java-application = "9.3.6"
 jasypt-spring-boot = "3.0.5"
 spring-dotenv = "4.0.0"
+questdb = "7.3.9"
+postgresql = "42.7.1"
 
 [libraries]
 spring-boot-starter-actuator = {group = "org.springframework.boot", name="spring-boot-starter-actuator", version.ref="spring-boot"}
@@ -49,6 +51,8 @@ jackson-datatype-jsr310 = {group = "com.fasterxml.jackson.datatype", name = "jac
 modelmapper = {group = "org.modelmapper", name = "modelmapper", version.ref="modelmapper"}
 jasypt-spring-boot = {group = "com.github.ulisesbocchio", name = "jasypt-spring-boot", version.ref="jasypt-spring-boot"}
 spring-dotenv = {group = "me.paulschwarz", name = "spring-dotenv", version.ref = "spring-dotenv"}
+questdb = {group = "org.questdb", name = "questdb", version.ref = "questdb"}
+postgresql = {group = "org.postgresql", name = "postgresql", version.ref="postgresql"}
 
 [plugins]
 springboot = {id = "org.springframework.boot", version.ref = "spring-boot"}
