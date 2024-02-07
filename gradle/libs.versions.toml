@@ -22,6 +22,7 @@ jasypt-spring-boot = "3.0.5"
 spring-dotenv = "4.0.0"
 questdb = "7.3.9"
 postgresql = "42.7.1"
+logback="1.4.14"
 
 [libraries]
 spring-boot-starter-actuator = {group = "org.springframework.boot", name="spring-boot-starter-actuator", version.ref="spring-boot"}
@@ -53,6 +54,8 @@ jasypt-spring-boot = {group = "com.github.ulisesbocchio", name = "jasypt-spring-
 spring-dotenv = {group = "me.paulschwarz", name = "spring-dotenv", version.ref = "spring-dotenv"}
 questdb = {group = "org.questdb", name = "questdb", version.ref = "questdb"}
 postgresql = {group = "org.postgresql", name = "postgresql", version.ref="postgresql"}
+logback-core = {group = "ch.qos.logback", name = "logback-core", version.ref="logback"}
+logback-classic = {group = "ch.qos.logback", name = "logback-classic", version.ref="logback"}
 
 [plugins]
 springboot = {id = "org.springframework.boot", version.ref = "spring-boot"}
@@ -66,4 +69,5 @@ spring-boot-security = ["spring-security-test", "spring-boot-starter-security"]
 spring-boot-data = ["liquibase", "mysql", "jasypt-spring-boot", "spring-dotenv"]
 openfeign = ["openfeign","feign-jackson"]
 graalvm-js = ["graalvm-js", "graalvm-js-script-engine"]
-
+questdb = ["questdb", "postgresql"]
+logback = ["logback-core", "logback-classic"]
