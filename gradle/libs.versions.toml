@@ -38,7 +38,7 @@ spring-boot-starter-cache = {group = "org.springframework.boot", name = "spring-
 spring-boot-starter-web = {group = "org.springframework.boot", name = "spring-boot-starter-web", version.ref="spring-boot"}
 openfeign = {group = "org.springframework.cloud", name = "spring-cloud-starter-openfeign", version.ref="openfeign"}
 junit-jupiter = {group = "org.junit.jupiter", name="junit-jupiter", version.ref="junit"}
-goole-gson = {group = "com.google.code.gson", name="gson", version.ref="gson"}
+google-gson = {group = "com.google.code.gson", name="gson", version.ref="gson"}
 lombok = {group = "org.projectlombok", name="lombok", version.ref="lombok"}
 springdoc = {group = "org.springdoc", name="springdoc-openapi-starter-webmvc-ui", version.ref="springdoc"}
 liquibase = {group = "org.liquibase", name = "liquibase-core", version.ref="liquibase"}
@@ -57,6 +57,8 @@ questdb = {group = "org.questdb", name = "questdb", version.ref = "questdb"}
 postgresql = {group = "org.postgresql", name = "postgresql", version.ref="postgresql"}
 logback-core = {group = "ch.qos.logback", name = "logback-core", version.ref="logback"}
 logback-classic = {group = "ch.qos.logback", name = "logback-classic", version.ref="logback"}
+apache-commons-math = {group = "org.apache.commons", name="commons-math4-legacy", version="4.0-beta1"}
+
 
 [plugins]
 springboot = {id = "org.springframework.boot", version.ref = "spring-boot"}
