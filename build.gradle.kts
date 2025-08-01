@@ -4,13 +4,13 @@ plugins {
 }
 
 group = "com.freyia"
-version = "0.0.2"
+version = "0.0.5"
 
 catalog {
     // declare the aliases, bundles and versions in this block
     versionCatalog {
         from(files("gradle/libs.versions.toml"))
-        library("intradaytrader", "com.freyia:intradaytrader:0.0.2")
+        library("intradaytrader", "com.freyia:intradaytrader:0.0.5")
     }
 }
 
